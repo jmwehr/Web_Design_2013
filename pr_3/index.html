@@ -55,6 +55,21 @@ margin:13px;
 position: inherit
 }
 
+h1{
+float:left;
+margin-left: 80px;
+margin-top: -30px;
+}
+
+p{
+float:left;
+margin-left: 80px;
+margin-top: -0px;
+position: inherit;
+
+}
+
+
 .h2{
 float:left;
 margin:10px;
@@ -63,6 +78,11 @@ position: inherit
 
 .whitebox{
 	background-color: white;
+	top:0px;
+	height: 240px;
+	border:2px solid;
+border-radius:15px;
+	border-color: white;
 	
 
 }
@@ -91,15 +111,22 @@ position: inherit
 }
  .bar{
  float:center;
-margin:25px;
+margin-top: 15px;
  
  }
- .highlight{
- 	background-image: url("images/highlight-01.png");
- 	
- 	background-size: 140px
+ .margin{
+ 	margin: 30px;
+ 	margin-top: 15px;
  	
  }
+ 
+ div#content_sixteen {
+		position: absolute;
+		height: 50px;
+		width: 900px;
+		top: 450px;
+		margin-left: 0px; }
+
 
  .gridster > ul > li {
  	background-color: white;
@@ -179,14 +206,14 @@ margin:25px;
 <div id="draggable">
 	<br></br>
 		<center>
-			<img src="Images/logo_copy.png" style="alignment:center";>
+			<img src="images/logo_copy.png" style="alignment:center";>
 		</center>
-	<br></br>
 	<br></br>
 <div class="whitebox">
 <center>
 
 <ul style="list-style-type:none"; style="allign:center;">
+
 	<br></br>	
   <li2 style="color: grey"> ABOUT </li> 
 	<li2 style="color: grey"> ORDER A CAKE </li> 
@@ -197,19 +224,25 @@ margin:25px;
 	<li2 style="color: grey"> STORE </li> 
 	<li2 style="color: grey"> CONTACT US</li> 
 	<center>
+	<div class="margin">
 <img src="images/border2-01.png" class="displayed">
+	
 	</center>
 	</center>
 
-<h1 style="font-family: Futura; font-size: 16px; color: Deeppink; align: left;">HOW TO </h1>
-<center>
-<div class="second">
-<p style="font-size: 14px; color: grey"; align="inherit";><em>A collection of how to guides for learning different baking techniques you can use!<br></br> Simply drag the guide box of your choice into the top right corner and expand by clicking and dragging the bottom left corner.    </em>
- </p></div>
- <br></br>
- </center>
-<p style="font-size: 10px; text-align: center;"></p>
+	<h1 style="font-family: Futura; font-size: 16px; color: Deeppink; align: left;"><strong>HOW TO</strong> </h1>
+	
+		<div class="second" class="whitebox" width: 400px;>
+
+<div id="content_sixteen">
+<p style="font-size: 14px; color: grey"; align="left";><em>A collection of how to guides for learning different baking techniques you can use! Simply drag the guide box of your choice into the top right corner and expand by clicking and dragging the bottom left corner.    </em>
+ </p>
 </div>
+
+
+
+ <br></br>
+
 </h1>
 		
 	</ul>
@@ -293,8 +326,9 @@ margin:25px;
     </div>
 <br></br>
 <center>
-<div class="bar">
-<img src="images/border2-01.png" class="displayed"> </div>
+<div class="margin">
+<img src="images/border2-01.png" class="displayed">
+</div>
 
 </center>
 </center>
@@ -304,7 +338,7 @@ margin:25px;
 <footer>
 		<div class="Footer"; style="position: absolute;">
 		
-		<p style="font-family: Futura;font-size: 10px; color: grey"> CALL US: 410 - 235 - 9229 2936   
+		<p2 style="font-family: Futura;font-size: 10px; color: grey"> CALL US: 410 - 235 - 9229 2936   
 		<br></br>
 		REMINGTON AVENUE BALTIMORE MD, 21211
 </p>
