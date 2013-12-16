@@ -3,8 +3,8 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.css" rel="stylesheet"/>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>   
+<link href="css3/bootstrap.css" rel="stylesheet"/>
+<script type="text/javascript" src="js3/bootstrap.min.js"></script>   
 <style type="text/css">
 body {
  	background-image:url("images/Decker_bg.png");
@@ -22,22 +22,36 @@ color: white;
 
 
 }
+h4{
+	color: black;
+}
 .browse {
 	text-indent: 20px;
 	
 }
 .hours{
 	text-indent: 20px;
-	float: left;
-	margin-top: -50px;
-
+	float: left;	
+	
+}
+.hourslist{
+	text-indent: 20px;
+	float: left;	
+	
+}
+#container2 {
+	width: 80px;
+	
+}
+#container3 {
+	width: 80px;
+	text-align: left
 	
 }
 .navbar {
 	
-	float: right;
-	margin-right: 60px;	
-	margin-top:30px;
+
+	
 	background-color: #484848;
 	color: white;
 	
@@ -59,19 +73,13 @@ p {
 	height: 5%;
 }
 
-.iconbrowse {
-	float: left;
-	margin-left: 5px;
-	margin-top: 30px;
-	}
-.iconclass {
-	float: left;
-	margin-left: 5px;
-	margin-top: 10px;
-	}
+.iconclass2 {
+	
+	padding-top: 50px;
+}
 .about{
 
-	margin-top: -140px;
+	margin-top: -200px;
 }
 
 ul{
@@ -80,87 +88,182 @@ ul{
 	 margin-top: -10px;
 	 margin-left: 10px;
 }
+
+}
+
+
 .list {
-	float: left;
+
 	
 }
 .list2{
-	float: left;
-	margin-top: -15px;
+
+	margin-top: -10px;
 	
 }
 
 .list3{
-	float: left;
-	margin-top: -15px;
-	margin-left: auto;
-	
+
+	margin-top: -10px;
+		
 }
 	
 	
 </style> 
 </head>
 <body>
+<div class="row">
+  <div class="col-md-12">
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" style="color: #99CC00; text-indent: 10px;">Decker Library</a>
+  </div>
 
-<section class="container">
-	<div class="row">
-	  <div class="col-xs-3 col-sm-3 col-md-3"><h1>Decker Library</div>
-	
-		  <div class="col-xs-7 col-md-7"><span class="navbar">Home</span></div>
-		  <div class="col-xs-1 col-md-1"><span class="navbar">Login</span></div>
-		  <div class="col-xs-1 col-md-1"><span class="navbar">Settings</span></div>
-	  </div>
-	 </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="class.html">Class Reading </a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="date.html">Date</a></li>
+           <li><a href="location.html">Location</a></li>
+           </ul>
+            <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+        	<li>  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Username">
+     <input type="text" class="form-control" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Login</button>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
 		
+		</div>
+		</div>
 	 
 	<div class="row">
-		<div class="col-xs-6 col-sm-7"><h2 class="browse">Browse Catalogue</h2></div>	
-		<div class="col-sm-0 col-md-5"><h2>About </h2></div>
-   </div>
-   <div class="row">
-   		<div class="col-xs-6 col-sm-7 col-md-07"><img src="images/search.png"></div>
-   </div>
-    <div class="row">
-    	<div class="col-xs-3 col-sm-2 col-md-2"><span class="iconbrowse"><img src="images/color_under.png"></span></div>
-		<div class="col-xs-3 col-sm-2 col-md-2"><span class="iconbrowse"><img src="images/date_under.png"></span></div>
-		<div class="col-xs-3 col-sm-2 col-md-2"><span class="iconbrowse"><img src="images/location.png"></span></div>
+		<div class="col-xs-10 col-sm-7"><h3 class="browse">Search</h3>
+		<form  class="navbar-form navbar-left" role="search">
+	   			<div class="form-group">
+		   			<input type="text" class="form-control" placeholder="Keywords">
+		   			</div>
+		   			
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+		</div>
+	</div>
+	
 
-		    </div>
-   <div class="row">
-	   <div class="col-xs-6 col-sm-8 col-md-7"><span class="iconclass"><img src="images/classreading.png"></span></div>
-	<div class="col-md-5"><p class="about" class="container"> The Decker Library is the campus Library of the Maryland Institute College of Art, located on the first floor and lower level of the Bunting Center. The Library contains almost 64,000 monographs and 325 current periodical subscriptions, and provides online access to more than 5,500 full-text journal titles, and hundreds of digital reference sources in art and numerous other subjects. The main focus of the Library is in the visual arts, while maintaining a broad, balanced collection in the humanities.
- </div>
+		
+	<div class="col-xs-0 col-sm-0 col-md-0"><h3 class="browse" style="text-indent: 20px;">Browse Catalog </h3></div>
+	
+	<div class="col-md-2">
+		<div class="container2"></div>
+			<div class="col-xs-6 col-sm-4 col-md-2">
+				<div class="col-xs-6 col-sm-4 col-md-2"><a href="color.html"><img data-src="holder.js" img src="images/color_under.png" class="iconclass" class="container"></a></div>
+					<br></br>
+					<br></br>
+				<div class="col-xs-6 col-sm-4 col-md-2"><a href="date.html"><img data-src="holder.js" img src="images/date_under.png" class="iconclass2" class="container"></a></div></div>
+				</div>
+				
+		<div class="container2"></div>
+			<div class="col-xs-6 col-sm-4 col-md-2">
+				<div class="col-xs-6 col-sm-4 col-md-2"><a href="location.html"><img data-src="holder.js" img src="images/location.png" class="iconclass" class="container"></a></div>
+				<br></br>
+					<br></br>
+				<div class="col-xs-6 col-sm-4 col-md-2"><a href="class.html"><img data-src="holder.js" img src="images/classreading.png" class="iconclass2" class="container"></a></div></div>
+				</div>
+		</div>
+		</div>
+		
+	<div class="col-xs-0 col-sm-1 col-md-1">		
+		<p></p>
+	</div>
+		<div  class="container3">
+		<div class="col-sm-6 col-md-6">
+		<div class="panel-group" id="accordion"> <div class="panel panel-default">
+		<div class="panel-heading"> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> About </a> </h4> </div> <div id="collapseOne" class="panel-collapse collapse in"> 
+		<div class="panel-body"> The Decker Library is the campus Library of the Maryland Institute College of Art, located on the first floor and lower level of the Bunting Center. The Library contains almost 64,000 monographs and 325 current periodical subscriptions, and provides online access to more than 5,500 full-text journal titles, and hundreds of digital reference sources in art and numerous other subjects. The main focus of the Library is in the visual arts, while maintaining a broad, balanced collection in the humanities.</div> 
+		</div> 
+		</div>
+		<div class="panel panel-default"> 
+		<div class="panel-heading"> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Policies & Guidelines </a> </h4> 
+		</div> 
+		<div id="collapseTwo" class="panel-collapse collapse"> <div class="panel-body">
+		<ul><li>
+		• All patrons must present either a current MICA ID, a current BALC member institution ID or Decker Library alumni card in order to borrow 	materials.</li>
+		<li>• Books are borrowed for a period of three weeks for students and staff, one semester for faculty.</li>
+		<li>• DVDs are borrowed for a period of two days for students, two weeks for faculty and staff.</li>
+		<li>• If a book that you need is on loan to another patron, you may ask the Circulation staff to place it on hold, and notify you when it is returned.</li>
+		<li>• Any book may be renewed if no other patron has placed a hold on it - see student guidelines for more information.</li>
+		<li>• Overdue charges are $0.25 a day per book, $1.00 a day per DVD.</li>
+		<li>• A book is considered lost if not returned within two months of the due date. The borrower is then charged the book's full replacement cost plus a $25 processing fee.</li>
+		<li>• After hours, books can be returned in the bookdrop located at the main entrance of the Library on the first floor of the Bunting Center.</li>
+		<li>• Library & MRC users can view a list of their checked-out items -- and students may renew items twice -- using the Library & MRC Catalog by clicking on "My Account".</li>
+		<li>• You can also view your Decker Library & MRC account using your mobile device! The freeBookMyne app allows you to view your checked-out items, holds and fines, and allows students to renew items. Available in iTunes.</li>
+
+		
+ </div> 
+ </div> 
+ </div> 
+		<div class="panel panel-default"> 
+		<div class="panel-heading"> <h4 class="panel-title" style="color=black"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Contact Us </a> </h4>
+		 </div> 
+		 <div id="collapseThree" class="panel-collapse collapse"> 
+		 <div class="panel-body"> 1401 W. Mount Royal Ave. Baltimore, MD 21217
+Decker Library Circulation Desk:  410.225.2272 or circ@mica.edu
+Decker Library Reference Desk:   410.225.2273 or refer@mica.edu
+Media Resources Collection:        410.225.2274 or mrc@mica.edu
+  </div> 
+  </div> 
+  </div> 
+  </div> 
+  
+ 
+  </div>
+
+
+		</div>
    </div>
    <div class="row">
-   		 <div class="row">
-   		 	<div class="col-sm-12 col-md-7"></div>
-   		 
-	   		 <div class="col-sm-12 col-md-5"><h2 class="list"> Policies & Guidelines </h2></div>
-	   		 </div>
-   <div class="row">
-   	 	 <div class="col-sm-12 col-md-7"></div>
-   		 <div class="col-sm-12 col-md-5"><h2 class="list2">Citation Help </h2></div>
-   </div>
-	   		 <div class="row">
-	   		 	<div class="col-sm-12 col-md-7"></div>
-	   		  <div class="col-sm-12 col-md-5"><h2 class="list3">Contact Us</h2></div>
-   
- 	  <!-- Optional: clear the XS cols if their content doesn't match in height -->
- 	</div>
+   		<div class="col-xs-6 col-sm-7 col-md-07">
+   			   		   </div></div>
+   	<div class="row">
+
+   	</div>	   
+    
+  
+
  	<div class="row">
   <div class="clearfix visible-xs"></div>
-  <div class="col-xs-8 col-sm-8"><h2 class="browse">Hours</h2></div> </div> </div>
+  <div class="col-xs-8 col-sm-8"><h3 class="hours">Hours</h3></div> </div> </div>
   
  
   	<div class="row">
   		
-  		<div class="col-xs-5 col-sm-4 col-md-5"><span class="ul"><ul style="list-style-type:none; indent: none">
+  		<div class="col-xs-8 col-sm-4 col-md-5"><span class="hourslist" class="ul"><ul style="list-style-type:none; indent: none">	
   		<strong>Thanksgiving Hours:</strong>
+  	
 	  			<li>Wed. Nov. 27th: 8:30-1:00pm</li>
 	  		<li >Nov. 28th-Dec. 1st: CLOSED</li>	  		
 	  		<li>Resume normal hours: Dec. 2</li>
@@ -169,7 +272,7 @@ ul{
 	  		<li>Mon-Thu 8:30am-9pm </li>
 	  		<li>Fri 8:30am-4:30pm </li>
 	  		<li>Sat-Sun 12-6pm </li>
-	  		
+	  		</ul>
 </span>
 </div>
 </div>
